@@ -96,8 +96,8 @@ div {
     /* height: 100%;
     width: 100%;
     object-fit: scale-down; */
-    height: 30vh;
-    width: auto;
+    width: 20vw;
+    height: auto;
     object-fit: cover;
     border-radius: 10%;
 }
@@ -106,11 +106,67 @@ div {
     text-align: justify;
     color: white;   
     font-size: 150%;
-    padding-right: 20px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 7%;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.img-flex {
+  flex: 33%;
+  max-width: 33%;
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.text-flex {
+  flex: 67%;
+  max-width: 67%;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.inner-text {
+  padding: 25px;
 }
 
 
+.project-image {
+  object-fit: cover;
+  width: 20vw;
+  height: auto;
+}
+
+.project-caption {
+  text-align: justify;
+  color: white;   
+  font-size: 250%;
+}
+
+.project-description {
+  padding-top: 15px;
+  text-align: left;
+  color: white;   
+  font-size: 150%;
+}
+
 @media (max-width: 768px) {
-  .reactive-60, .reactive-40 {flex: 100%; max-width: 100%;}
-  .about-me {flex-direction: column; flex-wrap: wrap;}
+  .reactive-60, .reactive-40, .text-flex, .img-flex {flex: 100%; max-width: 100%;}
+  .about-me, .project {flex-direction: column; flex-wrap: wrap;}
+  .project-image, .about-me-image {height: 20vh; width: auto;}
 }
