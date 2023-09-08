@@ -3,8 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: main;
-
+    /* font-family: 'Roboto Condensed'; */
 }
 
 .reactive-60 {
@@ -15,11 +14,6 @@ body, html {
 .reactive-40 {
   flex: 40%;
   max-width: 40%;
-}
-
-@font-face {
-  font-family: main;
-  src: url(https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap);
 }
 
 div {
@@ -49,7 +43,7 @@ div {
   }
   
 .background-image {
-    background: url(./sunset.jpg); 
+    background: url(./images/sunset.jpg); 
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
