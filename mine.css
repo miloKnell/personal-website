@@ -158,7 +158,8 @@ div {
 
 .project-image {
   object-fit: cover;
-  width: 20vw;
+  /* width: 20vw; */
+  width: 100%;
   height: auto;
 }
 
@@ -178,5 +179,5 @@ div {
 @media (max-width: 900px) {
   .reactive-60, .reactive-40, .text-flex, .img-flex {flex: 100%; max-width: 100%;}
   .about-me, .project {flex-direction: column; flex-wrap: wrap;}
-  .project-image, .about-me-image {height: 35vh; width: auto;}
+  /* .project-image, .about-me-image {height: 35vh; width: auto;} */
 }
